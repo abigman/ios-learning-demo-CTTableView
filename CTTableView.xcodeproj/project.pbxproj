@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D6B45D41933381800E8A1ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6B45D31933381800E8A1ED /* Foundation.framework */; };
+		3D6B45D61933381800E8A1ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6B45D51933381800E8A1ED /* CoreGraphics.framework */; };
+		3D6B45D81933381800E8A1ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6B45D71933381800E8A1ED /* UIKit.framework */; };
+		3D6B45DE1933381800E8A1ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D6B45DC1933381800E8A1ED /* InfoPlist.strings */; };
+		3D6B45E01933381800E8A1ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B45DF1933381800E8A1ED /* main.m */; };
+		3D6B45E41933381800E8A1ED /* LJYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B45E31933381800E8A1ED /* LJYAppDelegate.m */; };
+		3D6B45E71933381800E8A1ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6B45E51933381800E8A1ED /* Main.storyboard */; };
+		3D6B45EA1933381800E8A1ED /* LJYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B45E91933381800E8A1ED /* LJYViewController.m */; };
+		3D6B45EC1933381800E8A1ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6B45EB1933381800E8A1ED /* Images.xcassets */; };
+		3D6B45F31933381900E8A1ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6B45F21933381900E8A1ED /* XCTest.framework */; };
+		3D6B45F41933381900E8A1ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6B45D31933381800E8A1ED /* Foundation.framework */; };
+		3D6B45F51933381900E8A1ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6B45D71933381800E8A1ED /* UIKit.framework */; };
+		3D6B45FD1933381900E8A1ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D6B45FB1933381900E8A1ED /* InfoPlist.strings */; };
+		3D6B45FF1933381900E8A1ED /* CTTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B45FE1933381900E8A1ED /* CTTableViewTests.m */; };
+		3D6B460A19333A5E00E8A1ED /* LJYCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B460919333A5E00E8A1ED /* LJYCustomTableViewCell.m */; };
+		3D6B460D1933423B00E8A1ED /* LJYCustomAttributeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B460C1933423B00E8A1ED /* LJYCustomAttributeString.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D6B45F61933381900E8A1ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D6B45C81933381800E8A1ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D6B45CF1933381800E8A1ED;
+			remoteInfo = CTTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D6B45D01933381800E8A1ED /* CTTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6B45D31933381800E8A1ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D6B45D51933381800E8A1ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D6B45D71933381800E8A1ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D6B45DB1933381800E8A1ED /* CTTableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CTTableView-Info.plist"; sourceTree = "<group>"; };
+		3D6B45DD1933381800E8A1ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D6B45DF1933381800E8A1ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D6B45E11933381800E8A1ED /* CTTableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTTableView-Prefix.pch"; sourceTree = "<group>"; };
+		3D6B45E21933381800E8A1ED /* LJYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJYAppDelegate.h; sourceTree = "<group>"; };
+		3D6B45E31933381800E8A1ED /* LJYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJYAppDelegate.m; sourceTree = "<group>"; };
+		3D6B45E61933381800E8A1ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D6B45E81933381800E8A1ED /* LJYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJYViewController.h; sourceTree = "<group>"; };
+		3D6B45E91933381800E8A1ED /* LJYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJYViewController.m; sourceTree = "<group>"; };
+		3D6B45EB1933381800E8A1ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D6B45F11933381900E8A1ED /* CTTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6B45F21933381900E8A1ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3D6B45FA1933381900E8A1ED /* CTTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CTTableViewTests-Info.plist"; sourceTree = "<group>"; };
+		3D6B45FC1933381900E8A1ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D6B45FE1933381900E8A1ED /* CTTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTTableViewTests.m; sourceTree = "<group>"; };
+		3D6B460819333A5E00E8A1ED /* LJYCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJYCustomTableViewCell.h; sourceTree = "<group>"; };
+		3D6B460919333A5E00E8A1ED /* LJYCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJYCustomTableViewCell.m; sourceTree = "<group>"; };
+		3D6B460B1933423B00E8A1ED /* LJYCustomAttributeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJYCustomAttributeString.h; sourceTree = "<group>"; };
+		3D6B460C1933423B00E8A1ED /* LJYCustomAttributeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJYCustomAttributeString.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D6B45CD1933381800E8A1ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6B45D61933381800E8A1ED /* CoreGraphics.framework in Frameworks */,
+				3D6B45D81933381800E8A1ED /* UIKit.framework in Frameworks */,
+				3D6B45D41933381800E8A1ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6B45EE1933381900E8A1ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6B45F31933381900E8A1ED /* XCTest.framework in Frameworks */,
+				3D6B45F51933381900E8A1ED /* UIKit.framework in Frameworks */,
+				3D6B45F41933381900E8A1ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D6B45C71933381800E8A1ED = {
+			isa = PBXGroup;
+			children = (
+				3D6B45D91933381800E8A1ED /* CTTableView */,
+				3D6B45F81933381900E8A1ED /* CTTableViewTests */,
+				3D6B45D21933381800E8A1ED /* Frameworks */,
+				3D6B45D11933381800E8A1ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D6B45D11933381800E8A1ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D6B45D01933381800E8A1ED /* CTTableView.app */,
+				3D6B45F11933381900E8A1ED /* CTTableViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D6B45D21933381800E8A1ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D6B45D31933381800E8A1ED /* Foundation.framework */,
+				3D6B45D51933381800E8A1ED /* CoreGraphics.framework */,
+				3D6B45D71933381800E8A1ED /* UIKit.framework */,
+				3D6B45F21933381900E8A1ED /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D6B45D91933381800E8A1ED /* CTTableView */ = {
+			isa = PBXGroup;
+			children = (
+				3D6B45E21933381800E8A1ED /* LJYAppDelegate.h */,
+				3D6B45E31933381800E8A1ED /* LJYAppDelegate.m */,
+				3D6B45E51933381800E8A1ED /* Main.storyboard */,
+				3D6B45E81933381800E8A1ED /* LJYViewController.h */,
+				3D6B45E91933381800E8A1ED /* LJYViewController.m */,
+				3D6B460B1933423B00E8A1ED /* LJYCustomAttributeString.h */,
+				3D6B460C1933423B00E8A1ED /* LJYCustomAttributeString.m */,
+				3D6B460819333A5E00E8A1ED /* LJYCustomTableViewCell.h */,
+				3D6B460919333A5E00E8A1ED /* LJYCustomTableViewCell.m */,
+				3D6B45EB1933381800E8A1ED /* Images.xcassets */,
+				3D6B45DA1933381800E8A1ED /* Supporting Files */,
+			);
+			path = CTTableView;
+			sourceTree = "<group>";
+		};
+		3D6B45DA1933381800E8A1ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D6B45DB1933381800E8A1ED /* CTTableView-Info.plist */,
+				3D6B45DC1933381800E8A1ED /* InfoPlist.strings */,
+				3D6B45DF1933381800E8A1ED /* main.m */,
+				3D6B45E11933381800E8A1ED /* CTTableView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D6B45F81933381900E8A1ED /* CTTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D6B45FE1933381900E8A1ED /* CTTableViewTests.m */,
+				3D6B45F91933381900E8A1ED /* Supporting Files */,
+			);
+			path = CTTableViewTests;
+			sourceTree = "<group>";
+		};
+		3D6B45F91933381900E8A1ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D6B45FA1933381900E8A1ED /* CTTableViewTests-Info.plist */,
+				3D6B45FB1933381900E8A1ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D6B45CF1933381800E8A1ED /* CTTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6B46021933381900E8A1ED /* Build configuration list for PBXNativeTarget "CTTableView" */;
+			buildPhases = (
+				3D6B45CC1933381800E8A1ED /* Sources */,
+				3D6B45CD1933381800E8A1ED /* Frameworks */,
+				3D6B45CE1933381800E8A1ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTTableView;
+			productName = CTTableView;
+			productReference = 3D6B45D01933381800E8A1ED /* CTTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D6B45F01933381900E8A1ED /* CTTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6B46051933381900E8A1ED /* Build configuration list for PBXNativeTarget "CTTableViewTests" */;
+			buildPhases = (
+				3D6B45ED1933381900E8A1ED /* Sources */,
+				3D6B45EE1933381900E8A1ED /* Frameworks */,
+				3D6B45EF1933381900E8A1ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D6B45F71933381900E8A1ED /* PBXTargetDependency */,
+			);
+			name = CTTableViewTests;
+			productName = CTTableViewTests;
+			productReference = 3D6B45F11933381900E8A1ED /* CTTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D6B45C81933381800E8A1ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LJY;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = wmss;
+				TargetAttributes = {
+					3D6B45F01933381900E8A1ED = {
+						TestTargetID = 3D6B45CF1933381800E8A1ED;
+					};
+				};
+			};
+			buildConfigurationList = 3D6B45CB1933381800E8A1ED /* Build configuration list for PBXProject "CTTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D6B45C71933381800E8A1ED;
+			productRefGroup = 3D6B45D11933381800E8A1ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D6B45CF1933381800E8A1ED /* CTTableView */,
+				3D6B45F01933381900E8A1ED /* CTTableViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D6B45CE1933381800E8A1ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6B45EC1933381800E8A1ED /* Images.xcassets in Resources */,
+				3D6B45DE1933381800E8A1ED /* InfoPlist.strings in Resources */,
+				3D6B45E71933381800E8A1ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6B45EF1933381900E8A1ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6B45FD1933381900E8A1ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D6B45CC1933381800E8A1ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6B460A19333A5E00E8A1ED /* LJYCustomTableViewCell.m in Sources */,
+				3D6B45E41933381800E8A1ED /* LJYAppDelegate.m in Sources */,
+				3D6B45E01933381800E8A1ED /* main.m in Sources */,
+				3D6B460D1933423B00E8A1ED /* LJYCustomAttributeString.m in Sources */,
+				3D6B45EA1933381800E8A1ED /* LJYViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6B45ED1933381900E8A1ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6B45FF1933381900E8A1ED /* CTTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D6B45F71933381900E8A1ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D6B45CF1933381800E8A1ED /* CTTableView */;
+			targetProxy = 3D6B45F61933381900E8A1ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D6B45DC1933381800E8A1ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6B45DD1933381800E8A1ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D6B45E51933381800E8A1ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6B45E61933381800E8A1ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D6B45FB1933381900E8A1ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6B45FC1933381900E8A1ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D6B46001933381900E8A1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D6B46011933381900E8A1ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D6B46031933381900E8A1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CTTableView/CTTableView-Prefix.pch";
+				INFOPLIST_FILE = "CTTableView/CTTableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D6B46041933381900E8A1ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CTTableView/CTTableView-Prefix.pch";
+				INFOPLIST_FILE = "CTTableView/CTTableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3D6B46061933381900E8A1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CTTableView.app/CTTableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CTTableView/CTTableView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CTTableViewTests/CTTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3D6B46071933381900E8A1ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CTTableView.app/CTTableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CTTableView/CTTableView-Prefix.pch";
+				INFOPLIST_FILE = "CTTableViewTests/CTTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D6B45CB1933381800E8A1ED /* Build configuration list for PBXProject "CTTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6B46001933381900E8A1ED /* Debug */,
+				3D6B46011933381900E8A1ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D6B46021933381900E8A1ED /* Build configuration list for PBXNativeTarget "CTTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6B46031933381900E8A1ED /* Debug */,
+				3D6B46041933381900E8A1ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D6B46051933381900E8A1ED /* Build configuration list for PBXNativeTarget "CTTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6B46061933381900E8A1ED /* Debug */,
+				3D6B46071933381900E8A1ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D6B45C81933381800E8A1ED /* Project object */;
+}
