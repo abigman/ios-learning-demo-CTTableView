@@ -107,21 +107,7 @@ void cacheIt(LJYCS* obj) {
 }
 
 
-#pragma mark - 分成多个图片来绘制
-- (void)drawImage:(UIImage*)image toView:(UIView*)view
-{
-    // 将一个大图分成多个小图
-    
-    
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-
-        [view addSubview:[[UIImageView alloc] initWithImage:image]];
-//        NSDate *time8 = [NSDate date];
-//                if ([self.content length]>30)
-//        NSLog(@"executionTime 8-7 = %f\n\n\n", [time8 timeIntervalSinceDate:time7]);
-    });
-}
+#pragma mark - 
 - (void)drawContentToView:(LJYGCDTableViewCell *)view atRow:(NSInteger)row
 {
     
