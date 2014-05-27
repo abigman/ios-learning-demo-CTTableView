@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LJYGCDTableViewCell.h"
 
 @interface LJYCS : NSObject
 @property (nonatomic, strong) NSAttributedString *content;
 @property (assign, nonatomic) CGRect rect;
 
 - (id)initWithMaxRect:(CGRect)rect withContent:(NSString*)content;
-- (void)drawContentToView:(UIView*)view;
+- (void)drawContentToView:(LJYGCDTableViewCell*)view atRow:(NSInteger)row;
 @end

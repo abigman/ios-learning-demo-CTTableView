@@ -122,13 +122,13 @@ void cacheIt(LJYCS* obj) {
 //        NSLog(@"executionTime 8-7 = %f\n\n\n", [time8 timeIntervalSinceDate:time7]);
     });
 }
-- (void)drawContentToView:(UIView *)view
+- (void)drawContentToView:(LJYGCDTableViewCell *)view atRow:(NSInteger)row
 {
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
         
-        @try {
+
             @autoreleasepool {
                 UIImage *image;
                 UIGraphicsBeginImageContextWithOptions(self.rect.size, NO, 0.0);
@@ -143,18 +143,14 @@ void cacheIt(LJYCS* obj) {
                 
                 image = UIGraphicsGetImageFromCurrentImageContext();
                 UIGraphicsEndImageContext();
-                
-                
-                
+
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [view addSubview:[[UIImageView alloc] initWithImage:image]];
+                    if (view.rowIndex == row) {
+                        [view.contentView addSubview:[[UIImageView alloc] initWithImage:image]];
+                    }
                 });
             }
             
-        }
-        @catch (NSException *exception) {
-            NSLog(@"jjjj");
-        }
 
 
         

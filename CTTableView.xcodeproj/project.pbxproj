@@ -22,6 +22,7 @@
 		3D6B45FD1933381900E8A1ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D6B45FB1933381900E8A1ED /* InfoPlist.strings */; };
 		3D6B45FF1933381900E8A1ED /* CTTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B45FE1933381900E8A1ED /* CTTableViewTests.m */; };
 		3D787FF2193460F200F5BF2D /* LJYCS.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D787FF1193460F200F5BF2D /* LJYCS.m */; };
+		3DE8C5111934ABA8001DB228 /* LJYGCDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8C5101934ABA8001DB228 /* LJYGCDTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		3D6B45FE1933381900E8A1ED /* CTTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTTableViewTests.m; sourceTree = "<group>"; };
 		3D787FF0193460F200F5BF2D /* LJYCS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJYCS.h; sourceTree = "<group>"; };
 		3D787FF1193460F200F5BF2D /* LJYCS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJYCS.m; sourceTree = "<group>"; };
+		3DE8C50F1934ABA8001DB228 /* LJYGCDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJYGCDTableViewCell.h; sourceTree = "<group>"; };
+		3DE8C5101934ABA8001DB228 /* LJYGCDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJYGCDTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				3D6B45E51933381800E8A1ED /* Main.storyboard */,
 				3D6B45E81933381800E8A1ED /* LJYViewController.h */,
 				3D6B45E91933381800E8A1ED /* LJYViewController.m */,
+				3DE8C50F1934ABA8001DB228 /* LJYGCDTableViewCell.h */,
+				3DE8C5101934ABA8001DB228 /* LJYGCDTableViewCell.m */,
 				3D787FF0193460F200F5BF2D /* LJYCS.h */,
 				3D787FF1193460F200F5BF2D /* LJYCS.m */,
 				3D6B45EB1933381800E8A1ED /* Images.xcassets */,
@@ -255,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE8C5111934ABA8001DB228 /* LJYGCDTableViewCell.m in Sources */,
 				3D787FF2193460F200F5BF2D /* LJYCS.m in Sources */,
 				3D6B45E41933381800E8A1ED /* LJYAppDelegate.m in Sources */,
 				3D6B45E01933381800E8A1ED /* main.m in Sources */,

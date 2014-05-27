@@ -7,6 +7,7 @@
 //
 
 #import "LJYViewController.h"
+#import "LJYGCDTableViewCell.h"
 #import "LJYCS.h"
 #import <CoreText/CoreText.h>
 
@@ -24,6 +25,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.tableView registerClass:[LJYGCDTableViewCell class] forCellReuseIdentifier:@"Cell"];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.allowsSelection = NO;
@@ -606,20 +608,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    LJYGCDTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     [cell.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 //    [cell.contentView.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:cellIdentifier];
-    }
     if ([self.contentArr count] >= indexPath.row) {
         CGRect rect = CGRectInset(self.view.bounds, 10, 10);
         
         NSString* s = [self.contentArr objectAtIndex:indexPath.row];
-//        s = [s substringWithRange:NSMakeRange(0, [s length]>3000? 3000:[s length])];
         LJYCS* cs = [[LJYCS alloc] initWithMaxRect:rect withContent:s];
         
-        [cs drawContentToView:cell.contentView];
+        cell.rowIndex = indexPath.row;
+        [cs drawContentToView:cell atRow:indexPath.row];
         
     }
 
@@ -636,7 +635,6 @@
         NSString* s = [self.contentArr objectAtIndex:indexPath.row];
 //        s = [s substringWithRange:NSMakeRange(0, [s length]>3000? 3000:[s length])];
         LJYCS* cs = [[LJYCS alloc] initWithMaxRect:rect withContent:s];
-//        NSLog(@"%lf  %lf 💔 💔 💔 💔 💔 💔", cs.rect.size.width, cs.rect.size.height);     // 💔 💙 💚 💛 💜 💡 💢 💣
         
         return cs.rect.size.height;
     }
