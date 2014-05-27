@@ -21,8 +21,7 @@
 		3D6B45F51933381900E8A1ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6B45D71933381800E8A1ED /* UIKit.framework */; };
 		3D6B45FD1933381900E8A1ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D6B45FB1933381900E8A1ED /* InfoPlist.strings */; };
 		3D6B45FF1933381900E8A1ED /* CTTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B45FE1933381900E8A1ED /* CTTableViewTests.m */; };
-		3D6B460A19333A5E00E8A1ED /* LJYCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B460919333A5E00E8A1ED /* LJYCustomTableViewCell.m */; };
-		3D6B460D1933423B00E8A1ED /* LJYCustomAttributeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B460C1933423B00E8A1ED /* LJYCustomAttributeString.m */; };
+		3D787FF2193460F200F5BF2D /* LJYCS.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D787FF1193460F200F5BF2D /* LJYCS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +54,8 @@
 		3D6B45FA1933381900E8A1ED /* CTTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CTTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		3D6B45FC1933381900E8A1ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3D6B45FE1933381900E8A1ED /* CTTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTTableViewTests.m; sourceTree = "<group>"; };
-		3D6B460819333A5E00E8A1ED /* LJYCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJYCustomTableViewCell.h; sourceTree = "<group>"; };
-		3D6B460919333A5E00E8A1ED /* LJYCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJYCustomTableViewCell.m; sourceTree = "<group>"; };
-		3D6B460B1933423B00E8A1ED /* LJYCustomAttributeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJYCustomAttributeString.h; sourceTree = "<group>"; };
-		3D6B460C1933423B00E8A1ED /* LJYCustomAttributeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJYCustomAttributeString.m; sourceTree = "<group>"; };
+		3D787FF0193460F200F5BF2D /* LJYCS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJYCS.h; sourceTree = "<group>"; };
+		3D787FF1193460F200F5BF2D /* LJYCS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJYCS.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +120,8 @@
 				3D6B45E51933381800E8A1ED /* Main.storyboard */,
 				3D6B45E81933381800E8A1ED /* LJYViewController.h */,
 				3D6B45E91933381800E8A1ED /* LJYViewController.m */,
-				3D6B460B1933423B00E8A1ED /* LJYCustomAttributeString.h */,
-				3D6B460C1933423B00E8A1ED /* LJYCustomAttributeString.m */,
-				3D6B460819333A5E00E8A1ED /* LJYCustomTableViewCell.h */,
-				3D6B460919333A5E00E8A1ED /* LJYCustomTableViewCell.m */,
+				3D787FF0193460F200F5BF2D /* LJYCS.h */,
+				3D787FF1193460F200F5BF2D /* LJYCS.m */,
 				3D6B45EB1933381800E8A1ED /* Images.xcassets */,
 				3D6B45DA1933381800E8A1ED /* Supporting Files */,
 			);
@@ -260,10 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D6B460A19333A5E00E8A1ED /* LJYCustomTableViewCell.m in Sources */,
+				3D787FF2193460F200F5BF2D /* LJYCS.m in Sources */,
 				3D6B45E41933381800E8A1ED /* LJYAppDelegate.m in Sources */,
 				3D6B45E01933381800E8A1ED /* main.m in Sources */,
-				3D6B460D1933423B00E8A1ED /* LJYCustomAttributeString.m in Sources */,
 				3D6B45EA1933381800E8A1ED /* LJYViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +465,7 @@
 				3D6B46041933381900E8A1ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D6B46051933381900E8A1ED /* Build configuration list for PBXNativeTarget "CTTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +474,7 @@
 				3D6B46071933381900E8A1ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

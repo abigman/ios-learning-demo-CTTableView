@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4CD6B871-D323-4D50-81B7-83360CD001FC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CTTableView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3809520D-0336-4B25-9126-17D040CB904E</key>
+		<string>https://github.com/ruandao/ios-learning-demo-CTTableView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CTTableView.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3809520D-0336-4B25-9126-17D040CB904E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ruandao/ios-learning-demo-CTTableView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3809520D-0336-4B25-9126-17D040CB904E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3809520D-0336-4B25-9126-17D040CB904E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CTTableView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
