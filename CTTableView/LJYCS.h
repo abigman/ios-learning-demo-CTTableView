@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSAttributedString *content;
 @property (assign, nonatomic) CGRect rect;
 
++ (void)releaseCache;
 - (id)initWithMaxRect:(CGRect)rect withContent:(NSString*)content;
 - (void)drawContentToView:(LJYGCDTableViewCell*)view atRow:(NSInteger)row;
 @end

@@ -54,6 +54,10 @@ void cacheIt(LJYCS* obj) {
 
 @implementation LJYCS
 
++ (void)releaseCache
+{
+    cacheDict = nil;
+}
 - (id)initWithMaxRect:(CGRect)rect withContent:(NSString *)content
 {
     // 从缓存中获取
@@ -116,7 +120,7 @@ void cacheIt(LJYCS* obj) {
         
 
             @autoreleasepool {
-                UIImage *image;
+
                 UIGraphicsBeginImageContextWithOptions(self.rect.size, NO, 0.0);
                 
                 // Retrieve the current context
@@ -127,7 +131,7 @@ void cacheIt(LJYCS* obj) {
                 CGContextScaleCTM(context, 1.0, -1.0);
                 CTFrameDraw((CTFrameRef)self.ctFrame, context);
                 
-                image = UIGraphicsGetImageFromCurrentImageContext();
+                UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
                 UIGraphicsEndImageContext();
 
                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -136,9 +140,6 @@ void cacheIt(LJYCS* obj) {
                     }
                 });
             }
-            
-
-
         
         
 

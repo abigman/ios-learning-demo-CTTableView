@@ -610,7 +610,6 @@
     
     LJYGCDTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     [cell.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-//    [cell.contentView.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
     if ([self.contentArr count] >= indexPath.row) {
         CGRect rect = CGRectInset(self.view.bounds, 10, 10);
         
