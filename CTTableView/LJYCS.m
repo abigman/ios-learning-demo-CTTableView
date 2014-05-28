@@ -100,12 +100,12 @@ void cacheIt(LJYCS* obj) {
         }
         _rect = CGRectMake(0, 0, _width, _height);
         
-        
-        CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)self.content);
-        CGMutablePathRef path = CGPathCreateMutable();
-        CGPathAddRect(path, NULL, self.rect);
-        self.ctFrame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, 0), path, NULL);
-        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)self.content);
+            CGMutablePathRef path = CGPathCreateMutable();
+            CGPathAddRect(path, NULL, self.rect);
+            self.ctFrame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, 0), path, NULL);
+        });
     }
     return _rect;
 }
@@ -116,11 +116,12 @@ void cacheIt(LJYCS* obj) {
 {
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-        
-
             @autoreleasepool {
 
+                
+                /**
+                 *  离屏绘制界面
+                 */
                 UIGraphicsBeginImageContextWithOptions(self.rect.size, NO, 0.0);
                 
                 // Retrieve the current context
@@ -129,6 +130,8 @@ void cacheIt(LJYCS* obj) {
                 CGContextSetTextMatrix(context, CGAffineTransformIdentity);
                 CGContextTranslateCTM(context, 0, self.rect.size.height);
                 CGContextScaleCTM(context, 1.0, -1.0);
+
+                
                 CTFrameDraw((CTFrameRef)self.ctFrame, context);
                 
                 UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
@@ -139,10 +142,11 @@ void cacheIt(LJYCS* obj) {
                         [view.contentView addSubview:[[UIImageView alloc] initWithImage:image]];
                     }
                 });
+                
+                
+                
+                
             }
-        
-        
-
     });
 }
 
