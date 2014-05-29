@@ -1,0 +1,19 @@
+
+主要原理
+1.使用core text就是先有一个要显示的string，然后定义这个string每个部分的样式－>attributedString －> 生成 CTFramesetter -> 得到CTFrame -> 绘制
+其中可以更详细的设置换行方式，对齐方式，绘制区域的大小等。
+2.绘制只是显示，点击事件呢?就需要一个判断了。
+CTFrame 包含了多个CTLine,并且可以得到各个line的其实位置与大小。判断点击处在不在某个line上。CTLine 又可以判断这个点(相对于ctline的坐标)处的文字范围。然后遍历这个string的所有NSTextCheckingResult，根据result的rang判断点击处在不在这个rang上，从而得到点击的链接与位置。处理。
+
+
+
+然后，利用预先缓存ctframe 来加速，（考虑到图片可能太大，就不直接缓存图片了）
+
+
+下面这篇文章讲的很好。。。
+http://iosdeveloper.diandian.com/post/2012-11-16/40041182749
+
+
+
+以前的记录 ＋ 要跳的坑。。。 ＋ 图示，位置的计算
+http://ddl.yaha.me/ruandao/ios/ios文字排版，插入图片什么的/

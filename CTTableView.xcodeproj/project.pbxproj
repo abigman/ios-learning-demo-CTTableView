@@ -22,6 +22,7 @@
 		3D6B45FD1933381900E8A1ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D6B45FB1933381900E8A1ED /* InfoPlist.strings */; };
 		3D6B45FF1933381900E8A1ED /* CTTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B45FE1933381900E8A1ED /* CTTableViewTests.m */; };
 		3D6DC2BB1935BB6D00B23121 /* LJYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6DC2BA1935BB6D00B23121 /* LJYTableViewCell.m */; };
+		3D6DC2CA1937314900B23121 /* 原理.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3D6DC2C91937314900B23121 /* 原理.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		3D6B45FE1933381900E8A1ED /* CTTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTTableViewTests.m; sourceTree = "<group>"; };
 		3D6DC2B91935BB6D00B23121 /* LJYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJYTableViewCell.h; sourceTree = "<group>"; };
 		3D6DC2BA1935BB6D00B23121 /* LJYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJYTableViewCell.m; sourceTree = "<group>"; };
+		3D6DC2C91937314900B23121 /* 原理.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "原理.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				3D6B45E91933381800E8A1ED /* LJYViewController.m */,
 				3D6DC2B91935BB6D00B23121 /* LJYTableViewCell.h */,
 				3D6DC2BA1935BB6D00B23121 /* LJYTableViewCell.m */,
+				3D6DC2C91937314900B23121 /* 原理.txt */,
 				3D6B45EB1933381800E8A1ED /* Images.xcassets */,
 				3D6B45DA1933381800E8A1ED /* Supporting Files */,
 			);
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6B45EC1933381800E8A1ED /* Images.xcassets in Resources */,
+				3D6DC2CA1937314900B23121 /* 原理.txt in Resources */,
 				3D6B45DE1933381800E8A1ED /* InfoPlist.strings in Resources */,
 				3D6B45E71933381800E8A1ED /* Main.storyboard in Resources */,
 			);
