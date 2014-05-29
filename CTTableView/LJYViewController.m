@@ -30,13 +30,13 @@
     self.tableView.dataSource = self;
     self.tableView.allowsSelection = NO;
     self.contentArr = [NSMutableArray arrayWithArray:@[
-                                                       @"gggggggg1我很多字...!!!",
-                                                       @"2我很多字...!!!",
-                                                       @"3我很多字...!!!",
+                                                       @"gggggggg1我很多字..等等等等等等等等等等等等等等等等.!!!attributestring123456789",
+                                                       @"jjj多2我很多字...!!!等等等等等等等等等等等等等等等等",
+                                                       @"3我18959264502 www.baidu.com 18959264502..!!!attributestring123456789是12345678a阿啊阿qq啊阿啊啊威武威武啊1111111111111111ooabcdefghijklmnopqrstuvwxyzpppppppppppppppppppppppIII你好",
                                                        @"4我很多字...!!!",
                                                        @"5我很多8-)8-)8-)8-)字...!!!",
                                                        @"6我很多字...!!!",
-                                                       @"6我很多字...!!!我很多字...!!!我很多字...!!!我很多字8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)...!!!我很多字...!!!我很多我很多字...!!!我很多字...!!!我很www.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.comwww.baidu.com多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!字...!!!我很多字...!!!我很多字...!!!我很多字...!!!",
+                                                       @"6我很多字...!!!我很多字...!!!我很多字...!!!我很多字8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)www.baidu.com www.baidu.com 8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)8-)..18959264502 18959264502.!!!我很多字...!!!我很多我很多字...!!!我很多字...!!!我很  多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!我很多字...!!!字...!!!我很多字...!!!我很多字...!!!我很多字...!!!",
                                                        
                                                        ]];
     
@@ -117,7 +117,7 @@
         LJYTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
         [cell setRect:rect andContent:s];
         
-        return cell.rect.size.height + 20;
+        return cell.rect.size.height + 120;
     }
     
     return 0;
